@@ -31,47 +31,27 @@ The VMs are connected via an **internal network adapter** for isolated communica
 
 # 3. IT Admin Setup
 
-In this section, we describe how the IT administrator organized the users and security groups within Active Directory to manage permissions and resources efficiently.
+This section describes how users and security groups where organised within Active Directory to manage permissions and resources. Powershell Scripting was used to create the user accounts and sort them into Security Groups.
 
 ## Organisational Units (OUs)
 
-The Active Directory users were organized into OUs based on their instrument sections. This logical separation helps reflect the structure of the band and simplifies management.
-
 - **Users OU:** Contains all individual user accounts, subdivided by instrument/section:
-  - Brass
+  - Brass (with sub-OUs: Horn, Trombone and Trumpet)
   - Low_Brass (with sub-OUs: Euphonium, Tuba, Double_Bass)
-  - Percussion
-  - Saxophones
-  - Woodwinds
-
-Organizing users into sections allows the IT admin to apply policies, permissions, and shared folder access based on instrument groups.
+  - Percussion (no sub-OUs)
+  - Saxophones (with sub-OUs: Alto, Baritone, Soprano, Tenor)
+  - Woodwinds (with sub-OUs: Bassoon, Clarient, Flute, Oboe, Piccolo)
 
 ## Security Groups
-
-Security groups were created to manage access and roles:
 
 - **Band_Leaders:** Users with the highest privileges, able to modify shared resources and oversee band operations.  
 - **Section_Leaders:** Users who can manage their instrument section’s resources.  
 - **Instrument Section Groups:** Brass_Group, LowBrass_Group, Percussion_Group, Woodwinds_Group, Saxophone_Group; these help assign shared folder permissions.  
 - **Resource Groups:** Resources_ReadOnly, Resources_ReadWrite; control access levels for shared folders.
 
-Security groups allow the IT admin to manage permissions efficiently without having to restructure OUs for leadership roles or resource access.
-
 ---
 
-### Figures
-
-<table>
-<tr>
-<td>
-<img src="images/image1.png" alt="OU Structure" width="400"/>
-<p style="text-align:center"><b>Figure 3.1:</b> OU structure in Active Directory</p>
-</td>
-<td>
-<img src="images/image2.png" alt="Security Groups" width="400"/>
-<p style="text-align:center"><b>Figure 3.2:</b> Security groups in Active Directory</p>
-</td>
-</tr>
-</table>
+![Lab Overview](images/image1.png)
+*Figure 3.1 - OU structure and Security groups in Active Directory*
 
 
