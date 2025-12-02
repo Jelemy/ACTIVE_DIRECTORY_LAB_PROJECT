@@ -54,7 +54,10 @@ This section describes how users and security groups where organised within Acti
 
 ---
 
-<img src="images/image1.png" alt="OU and Groups" width="300"/>
+<div style="display: flex; gap: 10px;">
+  <img src="images/image8.png" alt="Drive Mapping" width="300"/>
+  <img src="images/image9.png" alt="Folder Redirection" width="300"/>
+</div>
 
 *Figure 3.1 - OU structure and Security groups in Active Directory*
 
@@ -78,7 +81,7 @@ This section goes over the Group Policy Objects (GPOs) implemented for the Kitau
 
 ---
 
-### 4.2 Drive Mapping & Folder Redirection
+### Drive Mapping & Folder Redirection
 
 Using the drive mapping GPO, Band members were given network drives, one where every member can access and one which is more section specific. These drives would serve as "boards" where Section and Band Leaders can share information and announcements to fellow band members. Using the group security groups and share permissions, we made configured it so that only band and section leader can modify the files and folders in these network drives. 
 
@@ -87,8 +90,8 @@ Additionally, for all band memebers, the folder redirection GPO was applied to m
 ---
 
 <div style="display: flex; gap: 10px;">
-  <img src="images/image8.png" alt="Drive Mapping" width="400"/>
-  <img src="images/image9.png" alt="Folder Redirection" width="400"/>
+  <img src="images/image8.png" alt="Drive Mapping" width="300"/>
+  <img src="images/image9.png" alt="Folder Redirection" width="300"/>
 </div>
 
 *Figure 4.2 & 4.3 - Band member shared network drives. Green sync overlay icons show that folders are being automatically synced to the server*
