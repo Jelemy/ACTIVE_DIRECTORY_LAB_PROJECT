@@ -70,6 +70,13 @@ This section goes over the Group Policy Objects (GPOs) implemented for the Kitau
 - **Section-specific Backgrounds:** Customize desktop backgrounds for users depending on their instrument section.
 - **Login Message Notifications:** Display a pop-up message upon login to convey important information to users.
 
+---
+
 <img src="images/image7.png" alt="OU and Groups" width="500"/> 
-*Figure 4.1: Overview of GPOs implemented in the Kitauji Band Active Directory lab.*
+
+*Figure 4.1 - GPO Policy Objects*
+
+---
+
+
 
