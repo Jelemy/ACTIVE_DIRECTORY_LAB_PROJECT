@@ -80,7 +80,9 @@ This section goes over the Group Policy Objects (GPOs) implemented for the Kitau
 
 ### 4.2 Drive Mapping & Folder Redirection
 
-This GPO setup handles mapping network drives for users and redirecting their Desktop and Documents folders to the server. Drive mapping ensures that users can quickly access shared resources without manually connecting to network paths. Folder redirection allows users’ files to follow them across different computers, improving mobility and backup consistency.
+Using the drive mapping GPO, Band members were given network drives, one where every member can access and one which is more section specific. These drives would serve as "boards" where Section and Band Leaders can share information and announcements to fellow band members. Using the group security groups and share permissions, we made configured it so that only band and section leader can modify the files and folders in these network drives. 
+
+Additionally, for all band memebers, the folder redirection GPO was applied to make sure that Desktop and Documents folders are stored on the server rather than locally on client machimnes. With folder redirection, personal folders for each user are automatically created under a common root directory on the server
 
 ---
 
@@ -89,7 +91,7 @@ This GPO setup handles mapping network drives for users and redirecting their De
   <img src="images/image9.png" alt="Folder Redirection" width="400"/>
 </div>
 
-
+*Figure 4.2 & 4.3 - Band member shared network drives. Green sync overlay icons show that folders are being automatically synced to the server*
 ---
 
 
