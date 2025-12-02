@@ -92,6 +92,7 @@ Additionally, for all band memebers, the folder redirection GPO was applied to m
 </div>
 
 *Figure 4.2 & 4.3 - Band member shared network drives. Green sync overlay icons show that folders are being automatically synced to the server*
+
 ---
 
 
