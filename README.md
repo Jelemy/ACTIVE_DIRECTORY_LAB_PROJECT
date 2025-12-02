@@ -84,10 +84,18 @@ This GPO setup handles mapping network drives for users and redirecting their De
 
 ---
 
-<div style="display: flex; gap: 10px;">
-  <img src="images/image8.png" alt="Drive Mapping" width="400"/>
-  <img src="images/image9.png" alt="Folder Redirection" width="400"/>
+<!-- First row -->
+<div style="display: flex; gap: 10px; margin-bottom: 10px;">
+  <img src="images/image6.png" alt="Image 6" width="300"/>
+  <img src="images/image10.png" alt="Image 10" width="300"/>
 </div>
+
+<!-- Second row -->
+<div style="display: flex; gap: 10px; margin-bottom: 10px;">
+  <img src="images/image8.png" alt="Image 8" width="300"/>
+  <img src="images/image9.png" alt="Image 9" width="300"/>
+</div>
+
 
 
 ---
