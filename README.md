@@ -2,7 +2,7 @@
 
 ## 1. Project Overview
 
-This project is basically a home lab designed to simulate the setup and management of a small organization's Active Directory environment. In this project I RP as an IT admin the Kitauji High School Concert Band club from the Japanese animated series *Sound! Euphonium*.
+This project is basically a home lab designed to simulate the setup and management of a small organization's Active Directory environment. In this project I RP as an IT admin for the fictional Kitauji High School Concert Band club from the Japanese animated series *Sound! Euphonium*.
 
 The goals of this project were to practice AD concepts like organizational units, security groups, group policies, shared folders, and software deployment in a virtual environment.
 
@@ -54,7 +54,7 @@ This section describes how users and security groups where organised within Acti
 
 ---
 
-<img src="images/image1.png" alt="OU and Groups" width="400"/>
+<img src="images/image1.png" alt="OU and Groups" width="300"/>
 
 *Figure 3.1 - OU structure and Security groups in Active Directory*
 
@@ -78,5 +78,18 @@ This section goes over the Group Policy Objects (GPOs) implemented for the Kitau
 
 ---
 
+### 4.2 Drive Mapping & Folder Redirection
+
+This GPO setup handles mapping network drives for users and redirecting their Desktop and Documents folders to the server. Drive mapping ensures that users can quickly access shared resources without manually connecting to network paths. Folder redirection allows users’ files to follow them across different computers, improving mobility and backup consistency.
+
+---
+
+<div style="display: flex; gap: 10px;">
+  <img src="images/image8.png" alt="Drive Mapping" width="400"/>
+  <img src="images/image9.png" alt="Folder Redirection" width="400"/>
+</div>
+
+
+---
 
 
