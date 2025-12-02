@@ -51,7 +51,8 @@ This section describes how users and security groups where organised within Acti
 
 ---
 
-![Lab Overview](images/image1.png)
+<img src="images/image1.png" alt="OU and Groups" width="400"/>
+
 *Figure 3.1 - OU structure and Security groups in Active Directory*
 
 
