@@ -90,8 +90,8 @@ Additionally, for all band memebers, the folder redirection GPO was applied to m
 ---
 
 <div style="display: flex; gap: 10px;">
-  <img src="images/image8.png" alt="Drive Mapping" width="300"/>
-  <img src="images/image9.png" alt="Folder Redirection" width="300"/>
+  <img src="images/image8.png" alt="Drive Mapping (GPO)" style="width: 40%; height: auto;" />
+  <img src="images/image9.png" alt="Permissions (GPO)" style="width: 40%; height: auto;" />
 </div>
 
 *Figure 4.2 & 4.3 - Band member shared network drives. Green sync overlay icons show that folders are being automatically synced to the server*
