@@ -55,8 +55,8 @@ This section describes how users and security groups where organised within Acti
 ---
 
 <div style="display: flex; gap: 10px;">
-  <img src="images/image1.png" alt="Drive Mapping" height="300"/>
-  <img src="images/image2.png" alt="Folder Redirection" height="300"/>
+  <img src="images/image1.png" alt="image1" style="width: 40%; height: auto;" />
+  <img src="images/image1.png" alt="image2" style="width: 40%; height: auto;" />
 </div>
 
 *Figure 3.1 - OU structure and Security groups in Active Directory*
