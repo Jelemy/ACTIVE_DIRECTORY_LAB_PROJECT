@@ -75,13 +75,13 @@ This section goes over the Group Policy Objects (GPOs) implemented for the Kitau
 
 ---
 
-<img src="images/image7.png" alt="OU and Groups" width="500"/> 
+<img src="images/image7.png" alt="GPOs" style="width: 50%; height: auto;" /> 
 
 *Figure 4.1 - GPO Policy Objects*
 
 ---
 
-### Drive Mapping & Folder Redirection
+### 4.1 Drive Mapping & Folder Redirection
 
 Using the drive mapping GPO, Band members were given network drives, one where every member can access and one which is more section specific. These drives would serve as "boards" where Section and Band Leaders can share information and announcements to fellow band members. Using the group security groups and share permissions, we made configured it so that only band and section leader can modify the files and folders in these network drives. 
 
@@ -98,7 +98,7 @@ Additionally, for all band memebers, the folder redirection GPO was applied to m
 
 ---
 
-### Software Deployment
+### 4.2 Software Deployment
 
 To ensure all band members had access to MuseScore for digital sheet-music editing, the software was deployed automatically using Group Policy Software Installation. Instead of deploying through User Configuration, the installation was done through Computer Configuration. This ensures the software is installed once per machine, rather than re-installing individually for every user who logs in—making the process more efficient and preventing unnecessary repeated installs.
 
@@ -111,7 +111,7 @@ To ensure all band members had access to MuseScore for digital sheet-music editi
 ---
 
 
-### Section-Based Desktop Backgrounds
+### 4.3 Section-Based Desktop Backgrounds
 
 To help distinguish each instrument section and create a more personalised environment, a Group Policy Object was created to automatically assign custom desktop wallpapers based on the user’s OU. Each section (Woodwinds, Brass, Percussion, etc.) receives a unique wallpaper stored in a shared location on the server.
 
@@ -131,7 +131,7 @@ To help distinguish each instrument section and create a more personalised envir
 
 ---
 
-## Login Message Notification
+## 4.4 Login Message Notification
 
 To test simple user notifications, like updates or reminders, a logon script GPO was created. The policy runs a small *.bat* file upon user logon which triggers a windows message popup.
 
