@@ -16,7 +16,7 @@ The Kitauji High Concert Band club has recently decided to move parts of their m
 *Figure 1.1 - Kitauji High Concert Band members*
 
 ---
-# 2. Home Lab Environment Setup
+## 2. Home Lab Environment Setup
 
 The lab environment consists of two virtual machines running on VirtualBox:  
 
@@ -32,11 +32,11 @@ The lab environment consists of two virtual machines running on VirtualBox:
 
 The VMs are connected via an **internal network adapter** for isolated communication, with the server providing NAT for internet access.
 
-# 3. IT Admin Setup
+## 3. IT Admin Setup
 
 This section describes how users and security groups where organised within Active Directory to manage permissions and resources. Powershell Scripting was used to create the user accounts and sort them into Security Groups.
 
-## Organisational Units (OUs)
+### Organisational Units (OUs)
 
 - **Users OU:** Contains all individual user accounts, subdivided by instrument/section:
   - Brass (with sub-OUs: Horn, Trombone and Trumpet)
@@ -45,7 +45,7 @@ This section describes how users and security groups where organised within Acti
   - Saxophones (with sub-OUs: Alto, Baritone, Soprano, Tenor)
   - Woodwinds (with sub-OUs: Bassoon, Clarient, Flute, Oboe, Piccolo)
 
-## Security Groups
+### Security Groups
 
 - **Band_Leaders:** Users with the highest privileges, able to modify shared resources and oversee band operations.  
 - **Section_Leaders:** Users who can manage their instrument section’s resources.  
@@ -97,5 +97,18 @@ Additionally, for all band memebers, the folder redirection GPO was applied to m
 *Figure 4.2 & 4.3 - Band member shared network drives. Green sync overlay icons show that folders are being automatically synced to the server*
 
 ---
+
+## 4.3 Software Deployment
+
+To ensure all band members had access to MuseScore for digital sheet-music editing, the software was deployed automatically using Group Policy Software Installation (GPSI). Instead of deploying through User Configuration, the installation was done through Computer Configuration. This ensures the software is installed once per machine, rather than re-installing individually for every user who logs in—making the process more efficient and preventing unnecessary repeated installs.
+
+---
+
+<img src="images/image11.png" alt="software added"style="width: 100%; height: auto;/> 
+
+*Figure 4.1 - Windows Start Menu showing Muse Score being recently added*
+
+---
+
 
 
