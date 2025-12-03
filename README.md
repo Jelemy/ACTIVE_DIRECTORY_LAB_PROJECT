@@ -98,7 +98,7 @@ Additionally, for all band memebers, the folder redirection GPO was applied to m
 
 ---
 
-## Software Deployment
+### Software Deployment
 
 To ensure all band members had access to MuseScore for digital sheet-music editing, the software was deployed automatically using Group Policy Software Installation. Instead of deploying through User Configuration, the installation was done through Computer Configuration. This ensures the software is installed once per machine, rather than re-installing individually for every user who logs in—making the process more efficient and preventing unnecessary repeated installs.
 
@@ -106,12 +106,12 @@ To ensure all band members had access to MuseScore for digital sheet-music editi
 
 <img src="images/image11.png" alt="Software Deployment (GPO)" style="width: 50%; height: auto;" />
 
-*Figure 4.1 - Windows Start Menu showing Muse Score being recently added*
+*Figure 4.4 - Windows Start Menu showing Muse Score being recently added*
 
 ---
 
 
-## Section-Based Desktop Backgrounds
+### Section-Based Desktop Backgrounds
 
 To help distinguish each instrument section and create a more personalised environment, a Group Policy Object was created to automatically assign custom desktop wallpapers based on the user’s OU. Each section (Woodwinds, Brass, Percussion, etc.) receives a unique wallpaper stored in a shared location on the server.
 
@@ -127,4 +127,22 @@ To help distinguish each instrument section and create a more personalised envir
 
 </div>
 
+*Figures 4.5, 4.6, 4.7, 4.8 - Desktop Backgrounds for Saxophones, Woodwinds, Percussion and Trumpet Sections respectively*
+
 ---
+
+## Login Message Notification
+
+To test simple user notifications, like updates or reminders, a logon script GPO was created. The policy runs a small *.bat* file upon user logon which triggers a windows message popup.
+
+```bat
+msg %username% "Sound! Euphonium"
+
+---
+
+<img src="images/image16.png" alt="Notif GPO" style="width: 60%; height: auto;" />
+
+*Figure 4.9 - Message notification against Low Brass section desktop background*
+
+---
+
