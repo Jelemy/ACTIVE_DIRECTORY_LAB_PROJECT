@@ -98,9 +98,9 @@ Additionally, for all band memebers, the folder redirection GPO was applied to m
 
 ---
 
-## 4.3 Software Deployment
+## Software Deployment
 
-To ensure all band members had access to MuseScore for digital sheet-music editing, the software was deployed automatically using Group Policy Software Installation (GPSI). Instead of deploying through User Configuration, the installation was done through Computer Configuration. This ensures the software is installed once per machine, rather than re-installing individually for every user who logs in—making the process more efficient and preventing unnecessary repeated installs.
+To ensure all band members had access to MuseScore for digital sheet-music editing, the software was deployed automatically using Group Policy Software Installation. Instead of deploying through User Configuration, the installation was done through Computer Configuration. This ensures the software is installed once per machine, rather than re-installing individually for every user who logs in—making the process more efficient and preventing unnecessary repeated installs.
 
 ---
 
@@ -111,4 +111,20 @@ To ensure all band members had access to MuseScore for digital sheet-music editi
 ---
 
 
+## Section-Based Desktop Backgrounds
 
+To help distinguish each instrument section and create a more personalised environment, a Group Policy Object was created to automatically assign custom desktop wallpapers based on the user’s OU. Each section (Woodwinds, Brass, Percussion, etc.) receives a unique wallpaper stored in a shared location on the server.
+
+---
+
+<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+
+  <img src="images/image12.png" alt="Background GPO 1" style="width: 45%; height: auto;" />
+  <img src="images/image13.png" alt="Background GPO 2" style="width: 45%; height: auto;" />
+
+  <img src="images/image14.png" alt="Background GPO 3" style="width: 45%; height: auto;" />
+  <img src="images/image15.png" alt="Background GPO 4" style="width: 45%; height: auto;" />
+
+</div>
+
+---
