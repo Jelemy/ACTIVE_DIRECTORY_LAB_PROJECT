@@ -75,7 +75,7 @@ This section goes over the Group Policy Objects (GPOs) implemented for the Kitau
 
 ---
 
-<img src="images/image7.png" alt="GPOs" style="width: 50%; height: auto;" /> 
+<img src="images/image7.png" alt="GPOs" style="width: 60%; height: auto;" /> 
 
 *Figure 4.1 - GPO Policy Objects*
 
@@ -131,7 +131,7 @@ To help distinguish each instrument section and create a more personalised envir
 
 ---
 
-## 4.4 Login Message Notification
+### 4.4 Login Message Notification
 
 To test simple user notifications, like updates or reminders, a logon script GPO was created. The policy runs a small *.bat* file upon user logon which triggers a windows message popup.
 
@@ -147,3 +147,8 @@ msg %username% "Sound! Euphonium"
 
 ---
 
+## 5. Summary and Reflection
+
+With this Active Directory setup, Kitauji High Band members now have a fully managed digital environment. They've got access to shared folders that can be used as boards and folder redirection ensures their personal files follow them across different client computers. Additionally, essential software such as MuseScore is automatically installed on all client machines, meaning all users have the tools they need without manual setup and we've also tested pop up notification messages in case they are needed for sharing updates, reminders or announcements. And for a more personalised touch we've given each section unique desktop backgrounds.
+
+Overall, this project was quite fun. The role-play aspect of it made it so it was really easy to invest and lose myself to working on it, especially since it involved a fictional group whose story I had become deeply endeared to. If anyone were to get anything out of reading this writeup it would be to see my passion and the maybe consider watching *Sound! Euphonium* (haha kidding... but seriously though). But that aside, through this home lab project I believe I was able to become very comfortable with managing an Active Directory environment. Between setting up OUs, Security groups, using scripts to automate things, managing permissions and applying group policies, I think I was able to develop a solid foundation for further learning about IT infrastructure and Active Directory, should I be given the chance.
