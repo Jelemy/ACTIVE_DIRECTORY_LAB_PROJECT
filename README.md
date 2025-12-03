@@ -137,6 +137,7 @@ To test simple user notifications, like updates or reminders, a logon script GPO
 
 ```bat
 msg %username% "Sound! Euphonium"
+```
 
 ---
 
