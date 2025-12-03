@@ -104,7 +104,7 @@ To ensure all band members had access to MuseScore for digital sheet-music editi
 
 ---
 
-<img src="images/image11.png" alt="Software Deployment (GPO)" style="width: 70%; height: auto;" />
+<img src="images/image11.png" alt="Software Deployment (GPO)" style="width: 50%; height: auto;" />
 
 *Figure 4.1 - Windows Start Menu showing Muse Score being recently added*
 
